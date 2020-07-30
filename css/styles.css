@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   overflow-x: hidden; }
@@ -147,11 +147,14 @@ a {
     display: flex; }
     .card .card__mini .card__logo {
       height: 7vh;
-      border-radius: .8rem; }
+      border-radius: .8rem;
+      box-shadow: 0.2rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.16); }
     .card .card__mini .card__company {
-      margin-left: 1rem; }
+      margin-left: 1.5rem; }
       .card .card__mini .card__company .card__company--title {
-        font-size: 3rem; }
+        font-family: 'DM Serif Display', serif;
+        font-size: 3.2rem;
+        color: #293337; }
       .card .card__mini .card__company .card__company--city {
         font-size: 1.6rem;
         color: rgba(0, 0, 0, 0.64);
@@ -159,7 +162,8 @@ a {
       .card .card__mini .card__company .card__company--description {
         margin-top: 1rem;
         font-size: 1.6rem;
-        line-height: 2.2rem; }
+        line-height: 2.2rem;
+        color: rgba(0, 0, 0, 0.8); }
 
 .remote {
   position: relative;
