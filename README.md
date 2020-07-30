@@ -1,4 +1,4 @@
-# Dashboard
+# SmallCos.com website clone
 
 > This is a clone of the smallCos.com website. Recreated it to learn about Vue JS show and hide feature
 
