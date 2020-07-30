@@ -130,6 +130,7 @@ a {
 
 .card {
   border-top: .1rem solid  #0000001f;
+  border-bottom: .1rem solid #0000001f;
   max-width: 50rem;
   margin: auto;
   transition: transform .4s ease-in-out; }
@@ -158,7 +159,8 @@ a {
       .card .card__mini .card__company .card__company--city {
         font-size: 1.6rem;
         color: rgba(0, 0, 0, 0.64);
-        line-height: 2rem; }
+        line-height: 2rem;
+        font-weight: 300; }
       .card .card__mini .card__company .card__company--description {
         margin-top: 1rem;
         font-size: 1.6rem;
@@ -182,3 +184,44 @@ a {
     font-size: 1rem;
     text-transform: uppercase;
     border-radius: .4rem; }
+
+.subscribe .subscribe___image {
+  display: block;
+  max-width: 50rem;
+  margin: 10rem auto; }
+
+.subscribe .subscribe__title {
+  font-family: 'DM Serif Display', sans-serif;
+  font-size: 3.2rem;
+  color: #293337;
+  text-align: center; }
+
+.subscribe .subscribe__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #293337;
+  max-width: 88%;
+  margin: 1rem auto;
+  text-align: center; }
+
+.subscribe .subscribe--input {
+  font-size: 1.6rem;
+  padding: 1.6rem 1.6rem;
+  display: block;
+  margin: 3rem auto;
+  width: 30rem;
+  border-radius: .4rem;
+  border: 0.1rem solid #e3e3e3; }
+
+.subscribe .subscribe--btn {
+  border: none;
+  margin-top: 2rem;
+  padding: 1.2rem 13rem;
+  border-radius: 10rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer; }
