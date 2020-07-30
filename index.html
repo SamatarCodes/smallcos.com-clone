@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Small Cos is a website that shows you available jobs"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="images/icons/work.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="vue.js"></script>
+    <title>Small Cos Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="container">
+        <div class="logo-section">
+          <!-- logo -->
+          <img src="images/icons/work.svg" alt="logo" class="logo-img" />
+          <p class="logo-title">Small Cos</p>
+        </div>
+        <main class="main">
+          <div class="main-left">
+            <h1 class="main-left__text">
+              Find a job at the world's most interesting small companies
+            </h1>
+            <p class="main-left__paragraph">
+              Small can be mighty. Explore a curated list of companies with less
+              than 100 employees, updated every month.
+            </p>
+            <button class="main-left--btn" role="button">
+              <a href="#" class="main-left--button">Browse the companies</a>
+            </button>
+          </div>
+          <!-- right side -->
+          <div class="right-side">
+            <img
+              src="images/schoolbooks.png"
+              class="header-image"
+              alt="woman carrying school books"
+            />
+          </div>
+        </main>
+      </section>
+    </header>
+    <section id="app" class="jobs">
+      <!-- container for hiring in May -->
+      <div class="date-box">
+        <p>Companies hiring in May 2020</p>
+      </div>
+      <!-- button: all and remote-->
+      <div class="button-container">
+        <!-- show all jobs button -->
+        <button
+          class="button--all"
+          @click="showAll = true, attachGrey = true"
+          :class="{nonSelected: !attachGrey}"
+        >
+          All
+        </button>
+        |
+        <!-- show only remote jobs button -->
+        <button
+          class="button--remote"
+          @click="showAll = false, showRemote = true, attachGrey = false"
+          :class="{nonSelected: attachGrey}"
+        >
+          Remote
+        </button>
+      </div>
+      <!-- end of button : all and remote-->
+
+      <!-- card ALL-->
+      <div class="card" v-if="showAll">
+        <!-- inside card -->
+        <a href="">
+          <div class="card__mini card__all">
+            <div>
+              <img
+                src="images/logos/affinity.png"
+                class="card__logo"
+                alt="logo of company"
+              />
+            </div>
+            <div class="card__company">
+              <h4 class="card__company--title">Affinity</h4>
+              <p class="card__company--city">San Francisco</p>
+              <p class="card__company--description">
+                Reimaging relationship intelligence. Using patented technology,
+                we help businesses leverage their most valuable data to find
+                their next big opportunity
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- ************************************************************ -->
+      <!-- CARD 2 REMOTE-->
+      <div class="card remote" v-if="showRemote">
+        <!-- inside card -->
+        <a href="">
+          <div class="card__mini card__remote">
+            <!-- logo -->
+            <div>
+              <img
+                src="images/logos/animalz.png"
+                loading="lazy"
+                class="card__logo"
+              />
+            </div>
+            <div class="card__company">
+              <h4 class="card__company--title">Animalz</h4>
+              <p class="card__company--city">Remote</p>
+              <p class="card__company--description">
+                Animalz provides high-end content marketing and SEO solutions to
+                startups, VC firms and enterprise companies.y
+              </p>
+            </div>
+            <!-- work remotely -->
+            <div class="card__remote">
+              <span class="card__remote--friendly">Remote friendly</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- ************************************************************ -->
+      <!-- card ALL-->
+      <div class="card" v-if="showAll">
+        <!-- inside card -->
+        <a href="">
+          <div class="card__mini card__all">
+            <div>
+              <img
+                src="images/logos/affinity.png"
+                class="card__logo"
+                alt="logo of company"
+              />
+            </div>
+            <div class="card__company">
+              <h4 class="card__company--title">The Browser Company</h4>
+              <p class="card__company--city">San Francisco</p>
+              <p class="card__company--description">
+                building a better way to use the internet
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

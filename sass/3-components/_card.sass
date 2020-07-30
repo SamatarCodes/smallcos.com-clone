@@ -1,0 +1,61 @@
+
+.card
+    border-top: .1rem solid  #0000001f
+    max-width: 50rem
+    margin: auto
+    transition: transform .4s ease-in-out
+    &:hover
+        background: #fff
+        border-radius: .8rem
+        transform: scale(1.04)
+        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
+        border-top: none
+        z-index: 999
+
+    .card__all
+        transition: transform .4s ease-in-out
+
+    .card__mini
+        padding: 3.2rem
+        display: flex
+
+        .card__logo
+
+            height: 7vh
+            border-radius: .8rem
+
+        .card__company
+            margin-left: 1rem
+
+            .card__company--title
+                font-size: 3rem
+
+            .card__company--city
+                font-size: 1.6rem
+                color: rgba(0,0,0,0.64)
+                line-height: 2rem
+
+            .card__company--description
+                margin-top: 1rem
+                font-size: 1.6rem
+                line-height: 2.2rem
+
+.remote
+    position: relative
+    transition: transform .4s ease-in-out
+
+    &:hover
+        background: #fff
+        border-radius: .8rem
+        transform: scale(1.04)
+        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
+
+    .card__remote--friendly
+        position: absolute
+        background: black
+        color: #fff
+        right: 2rem
+        padding: .4rem 1.6rem
+        font-size: 1rem
+        text-transform: uppercase
+        border-radius: .4rem
