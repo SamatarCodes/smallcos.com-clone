@@ -1,17 +1,11 @@
 
 .card
+
     border-top: .1rem solid  #0000001f
     border-bottom: .1rem solid #0000001f
     max-width: 50rem
     margin: auto
     transition: transform .4s ease-in-out
-    &:hover
-        background: #fff
-        border-radius: .8rem
-        transform: scale(1.04)
-        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
-        border-top: none
-        z-index: 999
 
     .card__all
         transition: transform .4s ease-in-out
@@ -50,12 +44,6 @@
     position: relative
     transition: transform .4s ease-in-out
 
-    &:hover
-        background: #fff
-        border-radius: .8rem
-        transform: scale(1.04)
-        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
-
     .card__remote--friendly
         position: absolute
         background: black
@@ -65,3 +53,20 @@
         font-size: 1rem
         text-transform: uppercase
         border-radius: .4rem
+
+@media screen and (min-width: 799px)
+    .card
+        &:hover
+            background: #fff
+            border-radius: .8rem
+            transform: scale(1.04)
+            box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
+            border-top: none
+            z-index: 999
+
+    .remote
+        &:hover
+            background: #fff
+            border-radius: .8rem
+            transform: scale(1.04)
+            box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025)
